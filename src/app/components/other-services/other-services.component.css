@@ -1,0 +1,20 @@
+.Default-Card{
+    max-width:40%;
+    height: auto;
+    position: fixed;
+    transition: all 1s linear;
+}
+.mat-card-image{
+    width: auto;
+    max-width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.fullscreen {
+    width: 100%;
+    height: 100%;   
+}
+
+
+ 

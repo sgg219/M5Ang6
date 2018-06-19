@@ -1,0 +1,123 @@
+<!--<span>Breakpoint: {{grid.cols}}</span>
+<mat-grid-list #grid rowHeight= "2:1"cols="3">
+<mat-grid-tile rowspan="5">
+  </mat-grid-tile>
+
+
+<mat-grid-tile>
+</mat-grid-tile>
+</mat-grid-list>
+
+-->
+<div class='md-padding' layout="row" layout-wrap>
+    <mat-card [ngClass] ="{'fullscreen': expanded == 'infrastructure', 'Default-Card' : expanded != 'infrastructure'}">
+      <mat-card-header>
+        <div mat-card-avatar class="Infrastructure Header"></div>
+        <mat-card-title>Network Infrastructure</mat-card-title>
+      </mat-card-header>
+      <img *ngIf="expanded != 'infrastructure'" mat-card-image src="/assets/Services-Photos/network-infrastructure.jpg" alt="Network Infrastructure">
+      <mat-card-content>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header (click)="expand('infrastructure')">
+              <mat-panel-title >
+                More Info
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Network infrastructure is defined as all the hardware and software resources that enable network connectivity,
+              communication, operations and managemfent of an enterprise network. It provides the necessary connectivity
+              between users, processes, applications, services and other networks, internal or external. Enabling your network
+              infrastructure for multimedia, network backups, storage replication, and latency sensitive applications takes
+              a full understanding of the end-to-end connectivity for each application. Industry Standard 1G/10G/40G network
+              switch solutions using the latest in virtual, stacking, and chassis solutions.</p>
+
+            <br>
+            <ul>
+              <p>Here’s a list of vendor’s M5 has worked with:</p>
+              <br>
+              <li>Cisco Systems</li>
+              <li>Juniper Networks</li>
+              <li>HP Enterprise</li>
+              <li>Dell Networks</li>
+              <li>F5 Networks</li>
+              <li>Arista Networks</li>
+            </ul>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-card-content>
+    </mat-card>
+ 
+
+
+    <mat-card [ngClass] ="{'fullscreen': expanded == 'wireless', 'Default-Card' : expanded != 'wireless'}">
+        <mat-card-header>
+          <div mat-card-avatar class="Infrastructure Header"></div>
+          <mat-card-title>Network Infrastructure</mat-card-title>
+        </mat-card-header>
+        <img *ngIf="expanded != 'wireless'" mat-card-image src="/assets/Services-Photos/network-infrastructure.jpg" alt="Network Infrastructure">
+        <mat-card-content>
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header (click)="expand('wireless')">
+                <mat-panel-title >
+                  More Info
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p>Network infrastructure is defined as all the hardware and software resources that enable network connectivity,
+                communication, operations and managemfent of an enterprise network. It provides the necessary connectivity
+                between users, processes, applications, services and other networks, internal or external. Enabling your network
+                infrastructure for multimedia, network backups, storage replication, and latency sensitive applications takes
+                a full understanding of the end-to-end connectivity for each application. Industry Standard 1G/10G/40G network
+                switch solutions using the latest in virtual, stacking, and chassis solutions.</p>
+  
+              <br>
+              <ul>
+                <p>Here’s a list of vendor’s M5 has worked with:</p>
+                <br>
+                <li>Cisco Systems</li>
+                <li>Juniper Networks</li>
+                <li>HP Enterprise</li>
+                <li>Dell Networks</li>
+                <li>F5 Networks</li>
+                <li>Arista Networks</li>
+              </ul>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+
+<!--
+  <mat-card class="Default-Card">
+    <mat-card-header>
+      <div mat-card-avatar class="Infrastructure Header"></div>
+      <mat-card-title>Network Infrastructure</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image  src="/assets/Services-Photos/network-infrastructure.jpg" alt="Network Infrastructure">
+    <mat-card-content>
+      <p>Network infrastructure is defined as all the hardware and software resources that enable network 
+      connectivity, communication, operations and managemfent of an enterprise network. It provides the necessary 
+      connectivity between users, processes, applications, services and other networks, internal or external. 
+      Enabling your network infrastructure for multimedia, network backups, storage replication, and latency 
+      sensitive applications takes a full understanding of the end-to-end connectivity for each application.
+       Industry Standard 1G/10G/40G network switch solutions using the latest in virtual, stacking, and 
+       chassis solutions.</p>
+  
+      <br>
+      <ul>
+        <p>Here’s a list of vendor’s M5 has worked with:</p>
+        <br>
+  
+        <li>Cisco Systems</li>
+        <li>Juniper Networks</li>
+        <li>HP Enterprise</li>
+        <li>Dell Networks</li>
+        <li>F5 Networks</li>
+        <li>Arista Networks</li>
+      </ul>
+  
+    </mat-card-content>
+  
+  </mat-card>
+-->

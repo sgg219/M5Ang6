@@ -1,0 +1,44 @@
+  <section class="section">
+    
+
+    <!-- main app container -->
+    <app-contactform></app-contactform>
+    <div class="container">            
+      <!-- form goes here -->
+      <div class="text-center"><h1>Contact Us</h1></div>
+      <!---->
+     
+      <form #submissionForm="ngForm" (ngSubmit)="processForm(submissionForm)" >
+          <p>is myform valid?{{submissionForm.valid}}</p>
+          <p>field:1{{submissionForm.first.$valid}}</p>
+          <ul class="form-style-1">
+              <li><label >Full Name <span class="required" >*</span></label>
+                <li>
+                  <label>Email <span class="required" >*</span></label>
+                  <input email required ngModel type="email" name="field3" class="field-long" [(ngModel)]="email" />
+              </li>
+
+              <li>
+                    <label>Phone Number <small>(format: xxx-xxx-xxx)</small></label>
+                    <input pattern="^\d{3}-\d{3}-\d{4}$" ngModel type="phone" name="field6" class="field-long" [(ngModel)]="phone" />
+                </li>
+            
+              <li>
+                  <label>Website</label>
+                  <input ngModel type="website" name="field4" class="field-long" [(ngModel)]="website">
+              </li>
+              <li>
+                  <label>Your Message <span class="required">*</span></label>
+                  <textarea required ngModel name="field5" id="field5" class="field-long field-textarea" [(ngModel)]="message"></textarea>
+              </li>
+              <li>
+                  <input type="submit" ng-disabled="!submissionForm.valid" value="Submit" />
+              </li>
+          </ul>
+
+          </form>
+          <span></span>
+    </div>
+    <pre>{{submissionForm.value | json}}</pre>
+    </section>
+
