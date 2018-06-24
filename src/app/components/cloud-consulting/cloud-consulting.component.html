@@ -1,3 +1,117 @@
-<p>
-  cloud-consulting works!
-</p>
+
+<div>
+  <h1>Cloud Consulting</h1>
+  <img src="assets/cloud-consulting/cloudConsulting.jpg" alt="test">
+</div>
+
+
+<h2>Our Philosophy</h2>
+<div class="bounds">
+  <div class="content" fxLayout="row wrap" fxLayout.xs="column align-space-between" fxLayoutAlign="space-between">
+    <div *ngFor="let philosophy of philosophies" class="card" fxFlex="24" fxFlex.lt-lg="49" fxFlex.xs="60">
+      <mat-card class="card-content">
+        <mat-card-title>{{philosophy.type}}</mat-card-title>
+        <mat-card-content>{{philosophy.content}}</mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
+
+<h2>Our Process</h2>
+<div class="bounds">
+  <div class="content" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center start" fxLayoutAlign.xs="center center">
+    <div *ngFor="let part of process" fxFlex="19" fxFlex.lt-lg="45" fxFlex.xs="60">
+      <div class="graphic-circle" [ngStyle]="{'background-image': part.photo}">
+      </div>
+
+      <p>
+        <span style="font-weight:bold">{{part.type}}</span> {{part.content}}</p>
+      <div *ngIf="part.type != 'Support'" fxShow.lt-xs class="fa fa-long-arrow-right"></div>
+
+    </div>
+  </div>
+</div>
+
+
+<h2>Our Process</h2>
+<div class='cloud-consulting__graphic'>
+  <div class=cloud-consulting__graphic__item>
+    <div class='circle circle--review'>
+    </div>
+    <p>
+      <span>Review</span> the customer's network, security posture and applications</p>
+  </div>
+
+  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+  <div class=cloud-consulting__graphic__item>
+    <div class='circle circle--advise'>
+    </div>
+    <p>
+      <span>Advise</span> clients on how to determine if an application is an appropriate candidate for a cost effective migration
+      to the cloud</p>
+  </div>
+
+  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+  <div class=cloud-consulting__graphic__item>
+    <div class='circle circle--analyze'>
+    </div>
+    <p>
+      <span>Analyze</span> the potential cost (TCO) migrating the application to the cloud</p>
+  </div>
+
+  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+  <div class=cloud-consulting__graphic__item>
+    <div class='circle circle--estimate'>
+    </div>
+    <p>
+      <span>Estimate</span> the bandwidth requirement for cloud access and recommend the appropriate connectivity solution</p>
+  </div>
+
+  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+  <div class=cloud-consulting__graphic__item>
+    <div class='circle circle--support'>
+    </div>
+    <p>
+      <span>Support</span> the customer’s transition to the cloud, ensuring a successful migration</p>
+  </div>
+
+
+  <div class="container">
+    <h3>Detailed Info</h3>
+    <ngb-tabset>
+      <ngb-tab>
+        <ng-template ngbTabTitle>
+          <b>Cloud Consulting Capababilities</b>
+        </ng-template>
+        <ng-template ngbTabContent>
+          <br>
+          <ul>
+            <li>Amazon Web Services Standard Consulting Partner</li>
+            <li>Industry recognized Amazon Web Services Certified Architects</li>
+            <li>Experienced team of architects with advanced network and security expertise</li>
+            <li>Proven track record of customer migrations to Amazon AWS</li>
+          </ul>
+          <br>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab>
+        <ng-template ngbTabTitle>
+          <b>Cloud Consulting Programs</b>
+        </ng-template>
+        <ng-template ngbTabContent>
+          <br>
+          <ul>
+            <li>Cloud Architecture Review and Readiness Program</li>
+            <li>Cloud Application Migration and TCO Analysis</li>
+            <li>Cloud Inter-Networking Connectivity Options Review</li>
+            <li>Cloud Network and Security architecture design</li>
+            <li>Cloud Services and deployment assistance</li>
+          </ul>
+        </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
+  </div>

@@ -1,0 +1,233 @@
+
+  .card-content{
+      height: 100%;   
+  }
+  .card{
+      margin-bottom: 2%;
+  }
+
+  .circle-frame{
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .graphic-circle{
+    width: 120px;
+    height:120px;
+    /*height: 120px;*/
+    background-size: cover;
+    background-color: #34b1ac;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img{
+      max-width: 50%;
+      height:auto;
+  }
+
+  .graphic-circle-img{
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+  }
+  /*img {
+      pointer-events: none;
+  }*/
+  /** NOTE: The properties below should ONLY be extended with SCSS **/
+ .cloud-consulting {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+    min-height: calc(100vh - 160px - 60px - 111px);
+  }
+  @media all and (max-width: 850px) {
+    .standard__section, .cloud-consulting {
+      min-height: calc(100vh - 250px - 60px - 111px);
+    }
+  }
+  
+ .cloud-consulting__header {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cloud-consulting__header__title {
+    padding: 15px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1.3em;
+    text-shadow: 0px 0px 10px black;
+  }
+  
+  .description {
+    margin: 30px auto;
+    max-width: 800px;
+    width: 85%;
+    line-height: 1.6em;
+  }
+  
+  .standard-btn {
+    background-color: #34b1ac;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .standard-btn:hover {
+    background-color: #b13438;
+  }
+  
+  .cloud-consulting__apn-logo {
+    margin: 0 auto;
+    width: 195px;
+    display: block;
+    border-radius: 3px;
+  }
+  /*
+  .cloud-consulting__header {
+    margin-bottom: 30px;
+    background-image: url("images/headers/cloud-consulting-header.jpg");
+  }*/
+  .cloud-consulting__header__title {
+    color: white;
+  }
+  .cloud-consulting__info {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+  }
+  @media all and (max-width: 900px) {
+    .cloud-consulting__info {
+      flex-direction: column;
+    }
+  }
+  .cloud-consulting__info__philosophy {
+    margin-right: 30px;
+    flex: 2;
+  }
+  .cloud-consulting__info__philosophy h2 {
+    font-size: 30px;
+  }
+  .cloud-consulting__info__philosophy div {
+    margin-top: 15px;
+  }
+  .cloud-consulting__info__philosophy div h4 {
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 26px;
+    color: #b13438;
+  }
+  .cloud-consulting__info__commitment {
+    margin-left: 30px;
+    flex: 3;
+  }
+  @media all and (max-width: 900px) {
+    .cloud-consulting__info__commitment {
+      margin-top: 30px;
+      margin-left: 0;
+    }
+  }
+  .cloud-consulting__info__commitment h2 {
+    font-size: 30px;
+  }
+  .cloud-consulting__info__commitment h4 {
+    font-size: 26px;
+    font-style: italic;
+    color: #34b1ac;
+  }
+  .cloud-consulting__info__commitment ul li {
+    margin-left: 20px;
+  }
+  .cloud-consulting__graphic {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  @media all and (max-width: 767px) {
+    .cloud-consulting__graphic {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .cloud-consulting__graphic i {
+    margin-top: 10px;
+    font-size: 100px;
+  }
+  @media all and (max-width: 767px) {
+    .cloud-consulting__graphic i {
+      transform: rotate(90deg);
+    }
+  }
+  .cloud-consulting__graphic__item {
+    width: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media all and (max-width: 767px) {
+    .cloud-consulting__graphic__item {
+      width: 230px;
+    }
+  }
+  .cloud-consulting__graphic__item .circle {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-color: #34b1ac;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cloud-consulting__graphic__item .circle--review {
+    background-image: url("/assets/cloud-consulting/review.jpg");
+  }
+  .cloud-consulting__graphic__item .circle--advise {
+    background-image: url("/assets/cloud-consulting/advise.jpg");
+  }
+  .cloud-consulting__graphic__item .circle--analyze {
+    background-image: url("/assets/cloud-consulting/analyze.jpg");
+  }
+  .cloud-consulting__graphic__item .circle--estimate {
+    background-image: url("/assets/cloud-consulting/estimate.jpg");
+  }
+  .cloud-consulting__graphic__item .circle--support {
+    background-image: url("/assets/cloud-consulting/support.jpg");
+  }
+  .cloud-consulting__graphic__item p {
+    margin-top: 10px;
+  }
+  .cloud-consulting__graphic__item p span {
+    font-weight: bolder;
+    font-size: 23px;
+  }
+  .cloud-consulting__apn-logo {
+    padding-top: 20px;
+  }

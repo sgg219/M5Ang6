@@ -1,18 +1,36 @@
-<nav class="navbar navbar-dark bg-dark mb-5">
-  <a class="navbar-brand" href="/">M5 Systems, inc.</a>
-  <div class="navbar-expand mr-auto">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="/about-us">About Us</a>
-      <a class="nav-item nav-link" href="/cloud-consulting">Cloud Consulting</a>
-      <a class="nav-item nav-link" href="/other-services">Other Services</a>
+<nav class="navbar navbar-dark bg-dark mb-5 navbar-expand-sm">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">M5 Systems, inc.</a>
     </div>
-  </div>
-  <div class="navbar-expand ml-auto navbar-nav">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" href="https://www.linkedin.com/company/m5-systems-inc./" target="_blank">
-        <i class="fa fa-linkedin"></i>
-      </a>
-      
+
+    <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-toggleable-sm collapse navbar-collapse pull-md-right text-xs-center" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
+      <ul class="nav navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/about-us']" routerLinkActive="active"> About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/cloud-consulting']" routerLinkActive="active"> Cloud Consulting</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/other-services']" routerLinkActive="active"> Other Services</a>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <div class="navbar-expand ml-auto navbar-nav">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="https://www.linkedin.com/company/m5-systems-inc./" target="_blank">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </div>
     </div>
   </div>
 </nav>

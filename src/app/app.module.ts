@@ -3,11 +3,12 @@ import { NgModule} from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule} from '@angular/material';
 import { MatGridListModule} from '@angular/material/grid-list'
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatExpansionModule} from '@angular/material/expansion';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule} from '@angular/flex-layout';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 import { NotFoundComponent } from './components/not-found/not-found.component';
@@ -53,7 +54,6 @@ const routes: Routes = [
     UiModule,
     FormsModule,
     ReactiveFormsModule,
-    MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
@@ -62,6 +62,7 @@ const routes: Routes = [
     MatGridListModule,
     FlexLayoutModule,
     MatExpansionModule,
+    NgbModule.forRoot()
     ],
   providers: [],
   bootstrap: [AppComponent]
