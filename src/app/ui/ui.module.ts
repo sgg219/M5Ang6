@@ -5,12 +5,18 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router'
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MglTimelineModule } from 'angular-mgl-timeline';
+
+
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule,
+    MglTimelineModule
   ],
   declarations: [LayoutComponent, HeaderComponent, FooterComponent],
   exports: [LayoutComponent]

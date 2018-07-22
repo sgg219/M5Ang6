@@ -3,4 +3,11 @@ address{
     font-style: italic;
     color: white;
 }
-
+@media (max-width: 767px) {
+    .navbar-toggleable-sm {
+      clear: both;
+    }
+  }
+  .nav-color{
+    background: linear-gradient(to bottom right, rgba(34, 91, 197, 0.719), rgb(41, 125, 146)) !important;
+  }

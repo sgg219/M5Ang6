@@ -1,0 +1,17 @@
+html, body 
+{ 
+  width: 100%;
+  margin: 0px;
+  padding: 0; 
+}
+
+.container-fluid {
+    padding: 0px;
+  }
+  
+  @media (max-width: 797px) {
+    body { 
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+  }

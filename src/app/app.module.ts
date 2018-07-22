@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule} from '@angular/flex-layout';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { MglTimelineModule } from 'angular-mgl-timeline';
 
 
 import { NotFoundComponent } from './components/not-found/not-found.component';
@@ -62,7 +63,8 @@ const routes: Routes = [
     MatGridListModule,
     FlexLayoutModule,
     MatExpansionModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    MglTimelineModule
     ],
   providers: [],
   bootstrap: [AppComponent]

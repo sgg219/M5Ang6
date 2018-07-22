@@ -6,26 +6,48 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cloud-consulting.component.css']
 })
 export class CloudConsultingComponent implements OnInit {
-  philosophies: {type: string, content: string}[] = [
-    {type: 'Security', content:
+
+  process: {step: string, content: string, number:string, color:string}[] = [
+    {step: 'Review', content:
+    "Review - the customer's business environment, applications, network, security, and overall cost structures."
+    ,number:"1", color:"rgba(45, 178, 211, 0.3)" },
+
+    {step: 'Design', content:
+    "Design - architect a customer's end-state cloud environment supporting their applications/business needs backed by a sound network and security architecture"
+    ,number:"2", color:"rgba(45, 178, 211, 0.4)" },
+
+    {step: 'Plan', content:
+    "Plan -  develop a realistic migration plan that the customer is comfortable with to achieve success."
+    ,number:"3", color:"rgba(45, 178, 211, 0.5)" },
+   
+    {step: 'Implement', content:
+    "Implement-  build the customer's new cloud infrastructure ensuring a successful migration"
+    ,number:"4", color:"rgba(45, 178, 211, 0.6)"},
+    
+    {step: 'Support', content:
+    "Support - the customer’s transition to the cloud, ensuring a successful migration"
+    ,number:"5", color:"rgba(45, 178, 211, 0.7)" },
+  ];
+  process22: {step: string, content: string}[] = [
+    {step: 'Security', content:
     "Security best practices should not be thrown away when you move to the Cloud. They should be the same as your current"
     + "premise Data Center." },
 
-    {type: 'Adaption', content:
+    {step: 'Adaption', content:
     "Adapting to the cloud means realigning your IT organization to a new way of providing and suporting infrastructure"
     + "services for you customer. The old strategy of scaling up or growing your Data Center continuay to meet short"
     + "term needs gets replaces by the cloud computing model of elasticity."},
 
-    {type: 'Efficiency', content:
+    {step: 'Efficiency', content:
     "Agility only comes with taking advantage of the cloud’s automation and scalability capabilities."},
    
-    {type: 'TCO', content:
+    {step: 'TCO', content:
     "Cost savings will come only by adapting to the “Cloud Paradigm”. Customers must must make their cloud services"
     +   "decisions like their traditional data center ones with ”open eyes”."
     },
   ];
 
-  process: {type: string, content: string, photo:string}[] = [
+  process21: {type: string, content: string, photo:string}[] = [
     { type: "Review", content: "the customer's network, security posture and applications", photo:"url(/assets/cloud-consulting/review.jpg)"},
     { type: "Advise", content: "clients on how to determine if an application is an appropriate candidate for a cost effective migration to the cloud", photo:"url(/assets/cloud-consulting/advise.jpg)"},
     { type: "Analyze", content: "the potential cost (TCO) migrating the application to the cloud", photo:"url(/assets/cloud-consulting/analyze.jpg)"},

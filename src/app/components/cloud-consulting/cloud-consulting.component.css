@@ -1,22 +1,127 @@
+/* cards */
 
-  .card-content{
-      height: 100%;   
-  }
-  .card{
-      margin-bottom: 2%;
-  }
+.card-content {
+  height: 100%;
+}
 
-  .circle-frame{
-    display: inline-block;
-    vertical-align: top;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  
+.card {
+  margin-bottom: 2%;
+}
+
+/*
+.circle-frame {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  overflow: hidden;
+}
+*/
+
+/*hero banner*/
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.colors{
+  background:rgba(45, 178, 211, 0.637);
+}
+.hero-section {
+  background: linear-gradient(rgba(77, 145, 190, 0.1), rgba(77, 145, 190, 0.1)), url("../../../assets/cloud-consulting/GlobalNetworkLarge.jpg");
+  /*background: rgba(37, 149, 224, 0.7), url("../../../assets/cloud-consulting/GlobalNetworkLarge.jpg");*/
+  opacity: 0.80;
+  filter: alpha(opacity=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/*
+.hero-section:after {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  background: rgba(37, 149, 224, 0.3);
+}*/
+.background{
+  position:relative;
+}
+.background-text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+.hero-section .hero-section-text {
+  color: #fefefe;
+  text-shadow: 3px 3px 6px #000000;
+}
+
+.timeline-header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+banner-image {
+  /* The image used */
+  /*background-image: url("../../../assets/cloud-consulting/GlobalNetworkLarge.jpg");*/
+  /* Set a specific height */
+  height: 50%;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+
+.banner-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+.card-process {
+  margin-bottom: 2%;
+  max-height:400px;
+  max-width:25%;
+}
+
+/*
   .graphic-circle{
     width: 120px;
     height:120px;
-    /*height: 120px;*/
+    
     background-size: cover;
     background-color: #34b1ac;
     border-radius: 100%;
@@ -39,11 +144,15 @@
     right: -100%;
     bottom: -100%;
     left: -100%;
-  }
-  /*img {
+  }*/
+
+/*img {
       pointer-events: none;
   }*/
-  /** NOTE: The properties below should ONLY be extended with SCSS **/
+
+/** NOTE: The properties below should ONLY be extended with SCSS **/
+
+/*
  .cloud-consulting {
     margin: 0 auto;
     max-width: 1200px;
@@ -104,12 +213,15 @@
     width: 195px;
     display: block;
     border-radius: 3px;
-  }
-  /*
+  }*/
+
+/*
   .cloud-consulting__header {
     margin-bottom: 30px;
     background-image: url("images/headers/cloud-consulting-header.jpg");
   }*/
+
+/*
   .cloud-consulting__header__title {
     color: white;
   }
@@ -230,4 +342,4 @@
   }
   .cloud-consulting__apn-logo {
     padding-top: 20px;
-  }
+  }*/

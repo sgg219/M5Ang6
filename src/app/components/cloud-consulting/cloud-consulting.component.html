@@ -1,22 +1,64 @@
-
-<div>
-  <h1>Cloud Consulting</h1>
-  <img src="assets/cloud-consulting/cloudConsulting.jpg" alt="test">
-</div>
-
-
-<h2>Our Philosophy</h2>
-<div class="bounds">
-  <div class="content" fxLayout="row wrap" fxLayout.xs="column align-space-between" fxLayoutAlign="space-between">
-    <div *ngFor="let philosophy of philosophies" class="card" fxFlex="24" fxFlex.lt-lg="49" fxFlex.xs="60">
-      <mat-card class="card-content">
-        <mat-card-title>{{philosophy.type}}</mat-card-title>
-        <mat-card-content>{{philosophy.content}}</mat-card-content>
-      </mat-card>
-    </div>
+<div class="hero-section full-width">
+  <div class="hero-section-text">
+    <h1>Cloud Consulting</h1>
+    <h5>M5 Systems makes cloud migration possible by following a proven 5-step process</h5>
   </div>
 </div>
 
+
+<div class="fluid-container full-width flex-modify">
+  <div class="timeline-header">
+    <h2 style="margin-top:3%;">Our Process</h2>
+  </div>
+</div>  
+<!--
+
+
+    <div class="bounds">
+      <div class="content" fxLayout="row wrap" fxLayout.xs="column align-space-between" fxLayoutAlign="space-between">
+        <div *ngFor="let process of process" class="card" fxFlex="19" fxFlex.lt-lg="49" fxFlex.xs="60">
+          <mat-card class="card-content">
+            <mat-card-title>{{process.step}}</mat-card-title>
+            <mat-card-content>{{process.content}}</mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+    
+  <mgl-timeline>
+    <div *ngFor="let process of process">
+      <mgl-timeline-entry>
+        <mgl-timeline-entry-header>
+          <mat-card class="timeline-content">
+            <mat-card-title>{{process.step}}</mat-card-title>
+            <mat-card-content>{{process.content}}</mat-card-content>
+          </mat-card>
+        </mgl-timeline-entry-header>
+        <mgl-timeline-entry-dot></mgl-timeline-entry-dot>
+      </mgl-timeline-entry>
+    </div>
+  </mgl-timeline>
+</div>
+-->
+
+    <div *ngFor="let process of process">
+        <mat-card class="card-process">
+            <mat-card-header>
+              <div mat-card-avatar [ngStyle] ="{'background-color':process.color}" class="background"> <div class="hero-section-text background-text"><b>{{process.number}}</b></div></div>
+              <mat-card-title>{{process.step}}</mat-card-title>
+            </mat-card-header>
+            
+            <mat-card-content>
+              <p>
+                {{process.content}}
+              </p>
+            </mat-card-content>
+          </mat-card>
+    </div> 
+
+
+
+<!--
 <h2>Our Process</h2>
 <div class="bounds">
   <div class="content" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center start" fxLayoutAlign.xs="center center">
@@ -78,40 +120,40 @@
     <p>
       <span>Support</span> the customer’s transition to the cloud, ensuring a successful migration</p>
   </div>
+-->
 
-
-  <div class="container">
-    <h3>Detailed Info</h3>
-    <ngb-tabset>
-      <ngb-tab>
-        <ng-template ngbTabTitle>
-          <b>Cloud Consulting Capababilities</b>
-        </ng-template>
-        <ng-template ngbTabContent>
-          <br>
-          <ul>
-            <li>Amazon Web Services Standard Consulting Partner</li>
-            <li>Industry recognized Amazon Web Services Certified Architects</li>
-            <li>Experienced team of architects with advanced network and security expertise</li>
-            <li>Proven track record of customer migrations to Amazon AWS</li>
-          </ul>
-          <br>
-        </ng-template>
-      </ngb-tab>
-      <ngb-tab>
-        <ng-template ngbTabTitle>
-          <b>Cloud Consulting Programs</b>
-        </ng-template>
-        <ng-template ngbTabContent>
-          <br>
-          <ul>
-            <li>Cloud Architecture Review and Readiness Program</li>
-            <li>Cloud Application Migration and TCO Analysis</li>
-            <li>Cloud Inter-Networking Connectivity Options Review</li>
-            <li>Cloud Network and Security architecture design</li>
-            <li>Cloud Services and deployment assistance</li>
-          </ul>
-        </ng-template>
-      </ngb-tab>
-    </ngb-tabset>
-  </div>
+<div class="container">
+  <h3>Detailed Info</h3>
+  <ngb-tabset>
+    <ngb-tab>
+      <ng-template ngbTabTitle>
+        <b>Cloud Consulting Capababilities</b>
+      </ng-template>
+      <ng-template ngbTabContent>
+        <br>
+        <ul>
+          <li>Amazon Web Services Standard Consulting Partner</li>
+          <li>Industry recognized Amazon Web Services Certified Architects</li>
+          <li>Experienced team of architects with advanced network and security expertise</li>
+          <li>Proven track record of customer migrations to Amazon AWS</li>
+        </ul>
+        <br>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab>
+      <ng-template ngbTabTitle>
+        <b>Cloud Consulting Programs</b>
+      </ng-template>
+      <ng-template ngbTabContent>
+        <br>
+        <ul>
+          <li>Cloud Architecture Review and Readiness Program</li>
+          <li>Cloud Application Migration and TCO Analysis</li>
+          <li>Cloud Inter-Networking Connectivity Options Review</li>
+          <li>Cloud Network and Security architecture design</li>
+          <li>Cloud Services and deployment assistance</li>
+        </ul>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>
