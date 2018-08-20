@@ -1,3 +1,30 @@
+/*process infographic*/
+.container-param{
+  max-height:25vh;
+}
+.bounds{
+  padding-left :1%;
+  padding-right: 1%;
+}
+.title{
+  vertical-align:top;
+  text-align: center;
+}
+.content{
+  text-align:center;
+}
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+.fill img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
 /* cards */
 
 .card-content {
@@ -16,7 +43,10 @@
   overflow: hidden;
 }
 */
-
+.center-text{
+  display:block;
+  text-align: center;
+}
 /*hero banner*/
 .full-width {
   width: 100vw;
@@ -26,6 +56,7 @@
   margin-left: -50vw;
   margin-right: -50vw;
 }
+
 
 .colors{
   background:rgba(45, 178, 211, 0.637);
@@ -37,7 +68,7 @@
   filter: alpha(opacity=80);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 35vh;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -60,6 +91,10 @@
   left: 0;
   background: rgba(37, 149, 224, 0.3);
 }*/
+.test{
+  background-image:url(/assets/logo-apn-consulting.png);
+  background-size:cover;
+}
 .background{
   position:relative;
 }

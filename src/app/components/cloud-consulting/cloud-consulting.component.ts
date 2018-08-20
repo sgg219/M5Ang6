@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-cloud-consulting',
   templateUrl: './cloud-consulting.component.html',
@@ -7,26 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CloudConsultingComponent implements OnInit {
 
-  process: {step: string, content: string, number:string, color:string}[] = [
+  process: {step: string, content: string, number:string, color:string, numberSide:string, contentSide:string}[] = [
     {step: 'Review', content:
     "Review - the customer's business environment, applications, network, security, and overall cost structures."
-    ,number:"1", color:"rgba(45, 178, 211, 0.3)" },
+    ,number:"01", color:"rgba(45, 178, 211, 0.3)",numberSide:"1" ,contentSide:"2" },
 
     {step: 'Design', content:
     "Design - architect a customer's end-state cloud environment supporting their applications/business needs backed by a sound network and security architecture"
-    ,number:"2", color:"rgba(45, 178, 211, 0.4)" },
+    ,number:"02", color:"rgba(45, 178, 211, 0.4)",numberSide:"2" ,contentSide:"1" },
 
     {step: 'Plan', content:
     "Plan -  develop a realistic migration plan that the customer is comfortable with to achieve success."
-    ,number:"3", color:"rgba(45, 178, 211, 0.5)" },
+    ,number:"03", color:"rgba(45, 178, 211, 0.5)",numberSide:"1" ,contentSide:"2" },
    
     {step: 'Implement', content:
     "Implement-  build the customer's new cloud infrastructure ensuring a successful migration"
-    ,number:"4", color:"rgba(45, 178, 211, 0.6)"},
+    ,number:"04", color:"rgba(45, 178, 211, 0.6)",numberSide:"2" ,contentSide:"1"},
     
     {step: 'Support', content:
     "Support - the customer’s transition to the cloud, ensuring a successful migration"
-    ,number:"5", color:"rgba(45, 178, 211, 0.7)" },
+    ,number:"05", color:"rgba(45, 178, 211, 0.7)",numberSide:"1" ,contentSide:"2" },
   ];
   process22: {step: string, content: string}[] = [
     {step: 'Security', content:

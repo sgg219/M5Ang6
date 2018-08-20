@@ -10,7 +10,7 @@
   <div class="timeline-header">
     <h2 style="margin-top:3%;">Our Process</h2>
   </div>
-</div>  
+</div>
 <!--
 
 
@@ -39,22 +39,80 @@
     </div>
   </mgl-timeline>
 </div>
+
+<div class="bounds"
+  fxLayout="column"
+  fxLayoutGap="10px"
+  fxLayoutAlign="center center"
+>
+  <div *ngFor="let process of process" class="container-fluid" fxLayout fxLayoutAlign="center" fxLayoutGap="10px">
+    <div class="jumbotron jumbotron-fluid" fxFlex="15%" fxFlexOrder="{{process.numberSide}}">
+      <div class="center-text">
+        <h1>{{process.number}}</h1>
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid" fxFlex="85%" fxFlexOrder="{{process.contentSide}}">
+        <div class="title">
+            <h1>{{process.step}}</h1>
+        </div>
+        <div class="content">
+            {{process.content}}
+        </div>
+    </div>
+  </div>
+
+  
 -->
 
-    <div *ngFor="let process of process">
-        <mat-card class="card-process">
-            <mat-card-header>
-              <div mat-card-avatar [ngStyle] ="{'background-color':process.color}" class="background"> <div class="hero-section-text background-text"><b>{{process.number}}</b></div></div>
-              <mat-card-title>{{process.step}}</mat-card-title>
-            </mat-card-header>
-            
-            <mat-card-content>
-              <p>
-                {{process.content}}
-              </p>
-            </mat-card-content>
-          </mat-card>
-    </div> 
+<div class="bounds"
+  fxLayout="column"
+  fxLayoutGap="10px"
+  fxLayoutAlign="center center"
+>
+  <div *ngFor="let process of process" class="container-fluid" fxLayout fxLayoutAlign="center" fxLayoutGap="10px">
+    <div class="card" fxFlex="15%" fxFlexOrder="{{process.numberSide}}">
+      <div class="fill">
+          <img src="/assets/cloud-consulting/review.jpg" class="card-img-top" >
+          <div class="card-img-overlay">
+                  <h1 class="card-title center-text">{{process.number}}</h1>
+          </div>
+      </div>
+    </div>
+    
+    <div class="card" fxFlex="85%" fxFlexOrder="{{process.contentSide}}">
+        
+        <div class="content card-body">
+            <div class="title">
+                <h1>{{process.step}}</h1>
+            </div>
+
+            {{process.content}}
+        </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!--<div *ngFor="let process of process">
+  <mat-card class="card-process">
+    <mat-card-header>
+      <div mat-card-avatar>
+        <avatar [letter]="process.number" [displayType]="'circle'" [size]="'25'" [background]="process.color"> </avatar>
+      </div>
+      <mat-card-title>{{process.step}}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>
+        {{process.content}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
+-->
 
 
 

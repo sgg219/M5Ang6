@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router'
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MglTimelineModule } from 'angular-mgl-timeline';
+import { AvatarModule } from 'ng2-avatar';
 
 
 
@@ -16,7 +17,8 @@ import { MglTimelineModule } from 'angular-mgl-timeline';
     RouterModule,
     NgbModule,
     BrowserAnimationsModule,
-    MglTimelineModule
+    MglTimelineModule,
+    AvatarModule
   ],
   declarations: [LayoutComponent, HeaderComponent, FooterComponent],
   exports: [LayoutComponent]
